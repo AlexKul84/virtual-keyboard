@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual keyboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="container_main">
+      <h1 class="heding">Virtual Keyboard</h1>
+      <p class="description">Клавиатура создана в операционной системе Windiws</p>
+      <textarea name="textarea" id="textarea" rows="10" class="textarea"></textarea>
+    </div>
+    <div class="container_keyboard">
+
+      <div class="item">
+        <span class="keyTilda">
+          `
+        </span>
+      </div>
+      <div class="item">
+        <span class="key1">
+          1
+        </span>
+      </div>
+      <div class="item">
+        <span class="key2">
+          2
+        </span>
+      </div>
+      <div class="item">
+        <span class="key3">
+          3
+        </span>
+      </div>
+      <div class="item">
+        <span class="key4">
+          4
+        </span>
+      </div>
+      <div class="item">
+        <span class="key5">
+          5
+        </span>
+      </div>
+      <div class="item">
+        <span class="key6">
+          6
+        </span>
+      </div>
+      <div class="item">
+        <span class="key7">
+          7
+        </span>
+      </div>
+      <div class="item">
+        <span class="key8">
+          8
+        </span>
+      </div>
+      <div class="item">
+        <span class="key9">
+          9
+        </span>
+      </div>
+      <div class="item">
+        <span class="key0">
+          0
+       </span>
+      </div>
+      <div class="item">
+        <span class="keyMinus">
+          -
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyEqual">
+          =
+        </span>
+      </div>
+      <div class="item backspace">
+        <span class="keyBackspace">
+          Bakspace
+        </span>
+      </div>
+      
+      <div class="item">
+        <span class="keyTab">
+          Tab
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus qKeyRus">
+          й
+        </span>
+        <span class="keyRusUp qKeyRusUp">
+          Й
+        </span>
+        <span class="keyEng qkey">
+          q
+        </span>
+        <span class="keyEngUp qKeyUp">
+          Q
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus wKeyRus">
+          ц
+        </span>
+        <span class="keyRusUp wKeyRusUp">
+          Ц
+        </span>
+        <span class="keyEng wKey">
+          w
+        </span>
+        <span class="keyEngUp wKeyUp">
+          W
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          у
+        </span>
+        <span class="keyRusUp">
+          У
+        </span>
+        <span class="keyEng">
+          e
+       </span>
+        <span class="keyEngUp">
+          E
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          к
+        </span>
+        <span class="keyRusUp">
+          К
+        </span>
+        <span class="keyEng">
+          r
+        </span>
+        <span class="keyEngUp">
+          R
+       </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          е
+      </span>
+        <span class="keyRusUp">
+          Е
+      </span>
+        <span class="keyEng">
+          t
+        </span>
+        <span class="keyEngUp">
+          T
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          н
+        </span>
+        <span class="keyRusUp">
+          н
+      </span>
+        <span class="keyEng">
+          y
+      </span>
+        <span class="keyEngUp">
+          Y
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          г
+        </span>
+        <span class="keyRusUp">
+          Г
+        </span>
+        <span class="keyEng">
+          u
+        </span>
+        <span class="keyEngUp">
+          U
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          ш
+        </span>
+        <span class="keyRusUp">
+          Ш
+        </span>
+        <span class="keyEng">
+          i
+        </span>
+        <span class="keyEngUp">
+          I
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          щ
+        </span>
+        <span class="keyRusUp">
+          Щ
+        </span>
+        <span class="keyEng">
+          o
+        </span>
+        <span class="keyEngUp">
+          O
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          з
+        </span>
+        <span class="keyRusUp">
+          З
+        </span>
+        <span class="keyEng">
+          p
+        </span>
+        <span class="keyEngUp">
+          P
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          х
+        </span>
+        <span class="keyRusUp">
+          Х
+        </span>
+        <span class="keyEng">
+          [
+        </span>
+        <span class="keyEng">
+          {
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          ъ
+        </span>
+        <span class="keyRusUp">
+          Ъ
+        </span>
+        <span class="keyEng">
+          ]
+        </span>
+        <span class="keyEngUp">
+          }
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          \
+        </span>
+        <span class="keyRusUp">
+          /
+        </span>
+        <span class="keyEng">
+          \
+        </span>
+        <span class="keyEngUp">
+          |
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyDel">
+          Del
+        </span>
+      </div>
+      
+      <div class="item capslock">
+        <span class="keyCupsLock">
+          CapsLock
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          ф
+      </span>
+        <span class="keyRusUp">
+          Ф
+      </span>
+        <span class="keyEng">
+          a
+      </span>
+        <span class="keyEngUp">
+          A
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          ы
+      </span>
+        <span class="keyRusUp">
+          Ы
+      </span>
+        <span class="keyEng">
+          s
+      </span>
+        <span class="keyEngUp">
+          S
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          в
+      </span>
+        <span class="keyRusUp">
+          В
+      </span>
+        <span class="keyEng">
+          d
+      </span>
+        <span class="keyEngUp">
+          D
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          а
+      </span>
+        <span class="keyRusUp">
+          А
+      </span>
+        <span class="keyEng">
+          f
+      </span>
+        <span class="keyEngUp">
+          F
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          п
+      </span>
+        <span class="keyRusUp">
+          П
+      </span>
+        <span class="keyEng">
+          g
+      </span>
+        <span class="keyEngUp">
+          G
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          р
+      </span>
+        <span class="keyRusUp">
+          р
+      </span>
+        <span class="keyEng">
+          h
+      </span>
+        <span class="keyEngUp">
+          H
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          о
+      </span>
+        <span class="keyRusUp">
+          О
+      </span>
+        <span class="keyEng">
+          j
+      </span>
+        <span class="keyEngUp">
+          J
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          л
+      </span>
+        <span class="keyRusUp">
+          Л
+      </span>
+        <span class="keyEng">
+          k
+      </span>
+        <span class="keyEngUp">
+          K
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          д
+      </span>
+        <span class="keyRusUp">
+          Д
+      </span>
+        <span class="keyEng">
+          l
+      </span>
+        <span class="keyEngUp">
+          L
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          ж
+      </span>
+        <span class="keyRusUp">
+          Ж
+      </span>
+        <span class="keyEng">
+          ;
+      </span>
+        <span class="keyEngUp">
+          :
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          э
+      </span>
+        <span class="keyRusUp">
+          Э
+      </span>
+        <span class="keyEng">
+          '
+      </span>
+        <span class="keyEngUp">
+          "
+      </span>
+      </div>
+      <div class="item enter">
+        <span class="keyEnter">
+          Enter
+        </span>
+      </div>
+
+      <div class="item shift_left">
+        <span class="keyShift">
+          shift
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          я
+      </span>
+        <span class="keyRusUp">
+          Я
+      </span>
+        <span class="keyEng">
+          z
+      </span>
+        <span class="keyEngUp">
+          Z
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          ч
+      </span>
+        <span class="keyRusUp">
+          Ч
+      </span>
+        <span class="keyEng">
+          x
+      </span>
+        <span class="keyEngUp">
+          X
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          с
+      </span>
+        <span class="keyRusUp">
+          С
+      </span>
+        <span class="keyEng">
+          c
+      </span>
+        <span class="keyEngUp">
+          C
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          м
+      </span>
+        <span class="keyRusUp">
+          М
+      </span>
+        <span class="keyEng">
+          v
+      </span>
+        <span class="keyEngUp">
+          V
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          и
+      </span>
+        <span class="keyRusUp">
+          И
+      </span>
+        <span class="keyEng">
+          b
+      </span>
+        <span class="keyEngUp">
+          B
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          т
+      </span>
+        <span class="keyRusUp">
+          Т
+      </span>
+        <span class="keyEng">
+          n
+      </span>
+        <span class="keyEngUp">
+          N
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          ь
+      </span>
+        <span class="keyRusUp">
+          Ь
+      </span>
+        <span class="keyEng">
+          m
+      </span>
+        <span class="keyEngUp">
+          M
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          б
+      </span>
+        <span class="keyRusUp">
+          Б
+      </span>
+        <span class="keyEng">
+          ,
+      </span>
+        <span class="keyEngUp">
+          <
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          ю
+      </span>
+        <span class="keyRusUp">
+          Ю
+      </span>
+        <span class="keyEng">
+          .
+      </span>
+        <span class="keyEngUp">
+          >
+      </span>
+      </div>
+      <div class="item">
+        <span class="keyRus">
+          .
+      </span>
+        <span class="keyRusUp">
+          ,
+      </span>
+        <span class="keyEng">
+          /
+      </span>
+        <span class="keyEngUp">
+          ?
+      </span>
+      </div>
+      <div class="item">
+        <span class="buttonUp">
+          ▲
+        </span>
+      </div>
+      <div class="item shift_right">
+        <span class="keyShiftRight">
+          shift
+        </span>
+      </div>
+
+      
+      <div class="item ctrl_left">
+        <span class="keyCtrl_left">
+          ctrl
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyWin">
+          Win
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyAltLeft">
+          Alt
+        </span>
+      </div>
+      <div class="item space">
+        <span class="keySpace">
+
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyAltRight">
+          Alt
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyButtonLeft">
+          ◄
+        </span> 
+      </div>
+      <div class="item">
+        <span class="keyButtonDoun">
+          ▼
+        </span>
+      </div>
+      <div class="item">
+        <span class="keyButtonRight">
+          ►
+        </span> 
+      </div>
+      <div class="item">
+        <span class="keyCtrlRight">
+          Ctrl
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
