@@ -37,12 +37,18 @@
 			text-align: center;
 			padding-top: 10px;
 			padding-bottom: 10px;
-			transition: .5s;
+			transition: 0.05s;
+		}
+
+		.item.btnDown {
+			background-color: rgb(90, 79, 94);
+			border-radius: 20px;
 		}
 
 		.item:hover {
 			background-color: rgb(90, 79, 94);
 			cursor: pointer;
+
 		}
 
 		.item:nth-child(14), .item:nth-child(42), .item:nth-child(55), .item:nth-child(68) {

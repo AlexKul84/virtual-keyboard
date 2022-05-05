@@ -41,8 +41,13 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+}
+
+.container_keyboard .item.btnDown {
+  background-color: #5a4f5e;
+  border-radius: 20px;
 }
 
 .container_keyboard .item:hover {
