@@ -119,12 +119,755 @@ let items = [
     "shift_down_eng": "^",
     "caps_lock_down_up_eng": "6",
     "caps_lock_down_up_shift_down_eng": "^"
+  },
+  {
+    "item_name": "Digit7",
+
+    "normal_rus": "7",
+    "shift_down_rus": "?",
+    "caps_lock_down_up_rus": "7",
+    "caps_lock_down_up_shift_down_rus": "?",
+    
+    "normal_eng": "7",
+    "shift_down_eng": "&",
+    "caps_lock_down_up_eng": "7",
+    "caps_lock_down_up_shift_down_eng": "&"
+  },
+  {
+    "item_name": "Digit8",
+
+    "normal_rus": "8",
+    "shift_down_rus": "*",
+    "caps_lock_down_up_rus": "8",
+    "caps_lock_down_up_shift_down_rus": "*",
+    
+    "normal_eng": "8",
+    "shift_down_eng": "*",
+    "caps_lock_down_up_eng": "8",
+    "caps_lock_down_up_shift_down_eng": "*"
+  },
+  {
+    "item_name": "Digit9",
+
+    "normal_rus": "9",
+    "shift_down_rus": "(",
+    "caps_lock_down_up_rus": "9",
+    "caps_lock_down_up_shift_down_rus": "(",
+    
+    "normal_eng": "9",
+    "shift_down_eng": "(",
+    "caps_lock_down_up_eng": "9",
+    "caps_lock_down_up_shift_down_eng": "("
+  },
+  {
+    "item_name": "Digit0",
+
+    "normal_rus": "0",
+    "shift_down_rus": ")",
+    "caps_lock_down_up_rus": "0",
+    "caps_lock_down_up_shift_down_rus": ")",
+    
+    "normal_eng": "0",
+    "shift_down_eng": ")",
+    "caps_lock_down_up_eng": "0",
+    "caps_lock_down_up_shift_down_eng": ")"
+  },
+  {
+    "item_name": "Minus",
+
+    "normal_rus": "-",
+    "shift_down_rus": "_",
+    "caps_lock_down_up_rus": "-",
+    "caps_lock_down_up_shift_down_rus": "_",
+    
+    "normal_eng": "-",
+    "shift_down_eng": "_",
+    "caps_lock_down_up_eng": "-",
+    "caps_lock_down_up_shift_down_eng": "_"
+  },
+  {
+    "item_name": "Equal",
+
+    "normal_rus": "=",
+    "shift_down_rus": "+",
+    "caps_lock_down_up_rus": "=",
+    "caps_lock_down_up_shift_down_rus": "+",
+    
+    "normal_eng": "=",
+    "shift_down_eng": "_",
+    "caps_lock_down_up_eng": "=",
+    "caps_lock_down_up_shift_down_eng": "+"
+  },
+  {
+    "item_name": "Backspace",
+
+    "normal_rus": "Backspace",
+    "shift_down_rus": "Backspace",
+    "caps_lock_down_up_rus": "Backspace",
+    "caps_lock_down_up_shift_down_rus": "Backspace",
+    
+    "normal_eng": "Backspace",
+    "shift_down_eng": "Backspace",
+    "caps_lock_down_up_eng": "Backspace",
+    "caps_lock_down_up_shift_down_eng": "Backspace"
+  },
+  {
+    "item_name": "Tab",
+
+    "normal_rus": "Tab",
+    "shift_down_rus": "Tab",
+    "caps_lock_down_up_rus": "Tab",
+    "caps_lock_down_up_shift_down_rus": "Tab",
+    
+    "normal_eng": "Tab",
+    "shift_down_eng": "Tab",
+    "caps_lock_down_up_eng": "Tab",
+    "caps_lock_down_up_shift_down_eng": "Tab"
+  },
+  {
+    "item_name": "KeyQ",
+
+    "normal_rus": "й",
+    "shift_down_rus": "Й",
+    "caps_lock_down_up_rus": "Й",
+    "caps_lock_down_up_shift_down_rus": "й",
+    
+    "normal_eng": "q",
+    "shift_down_eng": "Q",
+    "caps_lock_down_up_eng": "Q",
+    "caps_lock_down_up_shift_down_eng": "q"
+  },
+  {
+    "item_name": "KeyW",
+
+    "normal_rus": "ц",
+    "shift_down_rus": "Ц",
+    "caps_lock_down_up_rus": "Ц",
+    "caps_lock_down_up_shift_down_rus": "ц",
+    
+    "normal_eng": "w",
+    "shift_down_eng": "W",
+    "caps_lock_down_up_eng": "W",
+    "caps_lock_down_up_shift_down_eng": "w"
+  },
+  {
+    "item_name": "KeyE",
+
+    "normal_rus": "у",
+    "shift_down_rus": "У",
+    "caps_lock_down_up_rus": "У",
+    "caps_lock_down_up_shift_down_rus": "у",
+    
+    "normal_eng": "e",
+    "shift_down_eng": "E",
+    "caps_lock_down_up_eng": "E",
+    "caps_lock_down_up_shift_down_eng": "e"
+  },
+  {
+    "item_name": "KeyR",
+
+    "normal_rus": "к",
+    "shift_down_rus": "К",
+    "caps_lock_down_up_rus": "К",
+    "caps_lock_down_up_shift_down_rus": "к",
+    
+    "normal_eng": "r",
+    "shift_down_eng": "R",
+    "caps_lock_down_up_eng": "R",
+    "caps_lock_down_up_shift_down_eng": "r"
+  },
+  {
+    "item_name": "KeyT",
+
+    "normal_rus": "е",
+    "shift_down_rus": "Е",
+    "caps_lock_down_up_rus": "Е",
+    "caps_lock_down_up_shift_down_rus": "е",
+    
+    "normal_eng": "t",
+    "shift_down_eng": "T",
+    "caps_lock_down_up_eng": "T",
+    "caps_lock_down_up_shift_down_eng": "t"
+  },
+  {
+    "item_name": "KeyY",
+
+    "normal_rus": "н",
+    "shift_down_rus": "Н",
+    "caps_lock_down_up_rus": "Н",
+    "caps_lock_down_up_shift_down_rus": "н",
+    
+    "normal_eng": "y",
+    "shift_down_eng": "Y",
+    "caps_lock_down_up_eng": "Y",
+    "caps_lock_down_up_shift_down_eng": "y"
+  },
+  {
+    "item_name": "KeyU",
+
+    "normal_rus": "г",
+    "shift_down_rus": "Г",
+    "caps_lock_down_up_rus": "Г",
+    "caps_lock_down_up_shift_down_rus": "г",
+    
+    "normal_eng": "u",
+    "shift_down_eng": "U",
+    "caps_lock_down_up_eng": "U",
+    "caps_lock_down_up_shift_down_eng": "u"
+  },
+  {
+    "item_name": "KeyI",
+
+    "normal_rus": "ш",
+    "shift_down_rus": "Ш",
+    "caps_lock_down_up_rus": "Ш",
+    "caps_lock_down_up_shift_down_rus": "ш",
+    
+    "normal_eng": "i",
+    "shift_down_eng": "I",
+    "caps_lock_down_up_eng": "I",
+    "caps_lock_down_up_shift_down_eng": "i"
+  },
+  {
+    "item_name": "KeyO",
+
+    "normal_rus": "щ",
+    "shift_down_rus": "Щ",
+    "caps_lock_down_up_rus": "Щ",
+    "caps_lock_down_up_shift_down_rus": "щ",
+    
+    "normal_eng": "o",
+    "shift_down_eng": "O",
+    "caps_lock_down_up_eng": "O",
+    "caps_lock_down_up_shift_down_eng": "o"
+  },
+  {
+    "item_name": "KeyP",
+
+    "normal_rus": "з",
+    "shift_down_rus": "З",
+    "caps_lock_down_up_rus": "З",
+    "caps_lock_down_up_shift_down_rus": "з",
+    
+    "normal_eng": "p",
+    "shift_down_eng": "P",
+    "caps_lock_down_up_eng": "P",
+    "caps_lock_down_up_shift_down_eng": "p"
+  },
+  {
+    "item_name": "BracketLeft",
+
+    "normal_rus": "х",
+    "shift_down_rus": "Х",
+    "caps_lock_down_up_rus": "Х",
+    "caps_lock_down_up_shift_down_rus": "х",
+    
+    "normal_eng": "[",
+    "shift_down_eng": "{",
+    "caps_lock_down_up_eng": "[",
+    "caps_lock_down_up_shift_down_eng": "{"
+  },
+  {
+    "item_name": "BracketRight",
+
+    "normal_rus": "ъ",
+    "shift_down_rus": "Ъ",
+    "caps_lock_down_up_rus": "Ъ",
+    "caps_lock_down_up_shift_down_rus": "ъ",
+    
+    "normal_eng": "]",
+    "shift_down_eng": "}",
+    "caps_lock_down_up_eng": "]",
+    "caps_lock_down_up_shift_down_eng": "}"
+  },
+  {
+    "item_name": "Backslash",
+
+    "normal_rus": "\\",
+    "shift_down_rus": "/",
+    "caps_lock_down_up_rus": "\\",
+    "caps_lock_down_up_shift_down_rus": "/",
+    
+    "normal_eng": "\\",
+    "shift_down_eng": "|",
+    "caps_lock_down_up_eng": "\\",
+    "caps_lock_down_up_shift_down_eng": "|"
+  },
+  {
+    "item_name": "Delete",
+
+    "normal_rus": "Del",
+    "shift_down_rus": "Del",
+    "caps_lock_down_up_rus": "Del",
+    "caps_lock_down_up_shift_down_rus": "Del",
+    
+    "normal_eng": "Del",
+    "shift_down_eng": "Del",
+    "caps_lock_down_up_eng": "Del",
+    "caps_lock_down_up_shift_down_eng": "Del"
+  },
+  {
+    "item_name": "CapsLock",
+
+    "normal_rus": "CapsLock",
+    "shift_down_rus": "CapsLock",
+    "caps_lock_down_up_rus": "CapsLock",
+    "caps_lock_down_up_shift_down_rus": "CapsLock",
+    
+    "normal_eng": "CapsLock",
+    "shift_down_eng": "CapsLock",
+    "caps_lock_down_up_eng": "CapsLock",
+    "caps_lock_down_up_shift_down_eng": "CapsLock"
+  },
+  {
+    "item_name": "KeyA",
+
+    "normal_rus": "ф",
+    "shift_down_rus": "Ф",
+    "caps_lock_down_up_rus": "Ф",
+    "caps_lock_down_up_shift_down_rus": "ф",
+    
+    "normal_eng": "a",
+    "shift_down_eng": "A",
+    "caps_lock_down_up_eng": "A",
+    "caps_lock_down_up_shift_down_eng": "a"
+  },
+  {
+    "item_name": "KeyS",
+
+    "normal_rus": "ы",
+    "shift_down_rus": "Ы",
+    "caps_lock_down_up_rus": "Ы",
+    "caps_lock_down_up_shift_down_rus": "ы",
+    
+    "normal_eng": "s",
+    "shift_down_eng": "S",
+    "caps_lock_down_up_eng": "S",
+    "caps_lock_down_up_shift_down_eng": "s"
+  },
+  {
+    "item_name": "KeyD",
+
+    "normal_rus": "в",
+    "shift_down_rus": "В",
+    "caps_lock_down_up_rus": "В",
+    "caps_lock_down_up_shift_down_rus": "в",
+    
+    "normal_eng": "d",
+    "shift_down_eng": "D",
+    "caps_lock_down_up_eng": "D",
+    "caps_lock_down_up_shift_down_eng": "d"
+  },
+  {
+    "item_name": "KeyF",
+
+    "normal_rus": "а",
+    "shift_down_rus": "А",
+    "caps_lock_down_up_rus": "А",
+    "caps_lock_down_up_shift_down_rus": "а",
+    
+    "normal_eng": "f",
+    "shift_down_eng": "F",
+    "caps_lock_down_up_eng": "F",
+    "caps_lock_down_up_shift_down_eng": "f"
+  },
+  {
+    "item_name": "KeyG",
+
+    "normal_rus": "п",
+    "shift_down_rus": "П",
+    "caps_lock_down_up_rus": "П",
+    "caps_lock_down_up_shift_down_rus": "п",
+    
+    "normal_eng": "g",
+    "shift_down_eng": "G",
+    "caps_lock_down_up_eng": "G",
+    "caps_lock_down_up_shift_down_eng": "g"
+  },
+  {
+    "item_name": "KeyH",
+
+    "normal_rus": "р",
+    "shift_down_rus": "Р",
+    "caps_lock_down_up_rus": "Р",
+    "caps_lock_down_up_shift_down_rus": "р",
+    
+    "normal_eng": "h",
+    "shift_down_eng": "H",
+    "caps_lock_down_up_eng": "H",
+    "caps_lock_down_up_shift_down_eng": "h"
+  },
+  {
+    "item_name": "KeyJ",
+
+    "normal_rus": "о",
+    "shift_down_rus": "О",
+    "caps_lock_down_up_rus": "О",
+    "caps_lock_down_up_shift_down_rus": "о",
+    
+    "normal_eng": "j",
+    "shift_down_eng": "J",
+    "caps_lock_down_up_eng": "J",
+    "caps_lock_down_up_shift_down_eng": "j"
+  },
+  {
+    "item_name": "KeyK",
+
+    "normal_rus": "л",
+    "shift_down_rus": "Л",
+    "caps_lock_down_up_rus": "Л",
+    "caps_lock_down_up_shift_down_rus": "л",
+    
+    "normal_eng": "k",
+    "shift_down_eng": "K",
+    "caps_lock_down_up_eng": "K",
+    "caps_lock_down_up_shift_down_eng": "k"
+  },
+  {
+    "item_name": "KeyL",
+
+    "normal_rus": "д",
+    "shift_down_rus": "Д",
+    "caps_lock_down_up_rus": "Д",
+    "caps_lock_down_up_shift_down_rus": "д",
+    
+    "normal_eng": "l",
+    "shift_down_eng": "L",
+    "caps_lock_down_up_eng": "L",
+    "caps_lock_down_up_shift_down_eng": "l"
+  },
+  {
+    "item_name": "Semicolon",
+
+    "normal_rus": "ж",
+    "shift_down_rus": "Ж",
+    "caps_lock_down_up_rus": "Ж",
+    "caps_lock_down_up_shift_down_rus": "ж",
+    
+    "normal_eng": ";",
+    "shift_down_eng": ":",
+    "caps_lock_down_up_eng": ";",
+    "caps_lock_down_up_shift_down_eng": ":"
+  },
+  {
+    "item_name": "Quote",
+
+    "normal_rus": "э",
+    "shift_down_rus": "Э",
+    "caps_lock_down_up_rus": "Э",
+    "caps_lock_down_up_shift_down_rus": "э",
+    
+    "normal_eng": "'",
+    "shift_down_eng": '"',
+    "caps_lock_down_up_eng": "'",
+    "caps_lock_down_up_shift_down_eng": '"'
+  },
+  {
+    "item_name": "Enter",
+
+    "normal_rus": "Enter",
+    "shift_down_rus": "Enter",
+    "caps_lock_down_up_rus": "Enter",
+    "caps_lock_down_up_shift_down_rus": "Enter",
+    
+    "normal_eng": "Enter",
+    "shift_down_eng": "Enter",
+    "caps_lock_down_up_eng": "Enter",
+    "caps_lock_down_up_shift_down_eng": "Enter"
+  },
+  {
+    "item_name": "ShiftLeft",
+
+    "normal_rus": "Shift",
+    "shift_down_rus": "Shift",
+    "caps_lock_down_up_rus": "Shift",
+    "caps_lock_down_up_shift_down_rus": "Shift",
+    
+    "normal_eng": "Shift",
+    "shift_down_eng": "Shift",
+    "caps_lock_down_up_eng": "Shift",
+    "caps_lock_down_up_shift_down_eng": "Shift"
+  },
+  {
+    "item_name": "KeyZ",
+
+    "normal_rus": "я",
+    "shift_down_rus": "Я",
+    "caps_lock_down_up_rus": "Я",
+    "caps_lock_down_up_shift_down_rus": "я",
+    
+    "normal_eng": "z",
+    "shift_down_eng": "Z",
+    "caps_lock_down_up_eng": "Z",
+    "caps_lock_down_up_shift_down_eng": "z"
+  },
+  {
+    "item_name": "KeyX",
+
+    "normal_rus": "ч",
+    "shift_down_rus": "Ч",
+    "caps_lock_down_up_rus": "Ч",
+    "caps_lock_down_up_shift_down_rus": "ч",
+    
+    "normal_eng": "x",
+    "shift_down_eng": "X",
+    "caps_lock_down_up_eng": "X",
+    "caps_lock_down_up_shift_down_eng": "x"
+  },
+  {
+    "item_name": "KeyC",
+
+    "normal_rus": "с",
+    "shift_down_rus": "С",
+    "caps_lock_down_up_rus": "С",
+    "caps_lock_down_up_shift_down_rus": "с",
+    
+    "normal_eng": "c",
+    "shift_down_eng": "C",
+    "caps_lock_down_up_eng": "C",
+    "caps_lock_down_up_shift_down_eng": "c"
+  },
+  {
+    "item_name": "KeyV",
+
+    "normal_rus": "м",
+    "shift_down_rus": "М",
+    "caps_lock_down_up_rus": "М",
+    "caps_lock_down_up_shift_down_rus": "м",
+    
+    "normal_eng": "v",
+    "shift_down_eng": "V",
+    "caps_lock_down_up_eng": "V",
+    "caps_lock_down_up_shift_down_eng": "v"
+  },
+  {
+    "item_name": "KeyB",
+
+    "normal_rus": "и",
+    "shift_down_rus": "И",
+    "caps_lock_down_up_rus": "И",
+    "caps_lock_down_up_shift_down_rus": "и",
+    
+    "normal_eng": "b",
+    "shift_down_eng": "B",
+    "caps_lock_down_up_eng": "B",
+    "caps_lock_down_up_shift_down_eng": "b"
+  },
+  {
+    "item_name": "KeyN",
+
+    "normal_rus": "т",
+    "shift_down_rus": "Т",
+    "caps_lock_down_up_rus": "Т",
+    "caps_lock_down_up_shift_down_rus": "т",
+    
+    "normal_eng": "n",
+    "shift_down_eng": "N",
+    "caps_lock_down_up_eng": "N",
+    "caps_lock_down_up_shift_down_eng": "n"
+  },
+  {
+    "item_name": "KeyM",
+
+    "normal_rus": "ь",
+    "shift_down_rus": "Ь",
+    "caps_lock_down_up_rus": "Ь",
+    "caps_lock_down_up_shift_down_rus": "ь",
+    
+    "normal_eng": "m",
+    "shift_down_eng": "M",
+    "caps_lock_down_up_eng": "M",
+    "caps_lock_down_up_shift_down_eng": "m"
+  },
+  {
+    "item_name": "Comma",
+
+    "normal_rus": "б",
+    "shift_down_rus": "Б",
+    "caps_lock_down_up_rus": "Б",
+    "caps_lock_down_up_shift_down_rus": "б",
+    
+    "normal_eng": ",",
+    "shift_down_eng": "<",
+    "caps_lock_down_up_eng": ",",
+    "caps_lock_down_up_shift_down_eng": "<"
+  },
+  {
+    "item_name": "Period",
+
+    "normal_rus": "ю",
+    "shift_down_rus": "Ю",
+    "caps_lock_down_up_rus": "Ю",
+    "caps_lock_down_up_shift_down_rus": "ю",
+    
+    "normal_eng": ".",
+    "shift_down_eng": ">",
+    "caps_lock_down_up_eng": ".",
+    "caps_lock_down_up_shift_down_eng": ">"
+  },
+  {
+    "item_name": "Slash",
+
+    "normal_rus": ".",
+    "shift_down_rus": ",",
+    "caps_lock_down_up_rus": ".",
+    "caps_lock_down_up_shift_down_rus": ",",
+    
+    "normal_eng": "/",
+    "shift_down_eng": "?",
+    "caps_lock_down_up_eng": "/",
+    "caps_lock_down_up_shift_down_eng": "?"
+  },
+  {
+    "item_name": "ArrowUp",
+
+    "normal_rus": "▲",
+    "shift_down_rus": "▲",
+    "caps_lock_down_up_rus": "▲",
+    "caps_lock_down_up_shift_down_rus": "▲",
+    
+    "normal_eng": "▲",
+    "shift_down_eng": "▲",
+    "caps_lock_down_up_eng": "▲",
+    "caps_lock_down_up_shift_down_eng": "▲"
+  },
+  {
+    "item_name": "ShiftRight",
+
+    "normal_rus": "Shift",
+    "shift_down_rus": "Shift",
+    "caps_lock_down_up_rus": "Shift",
+    "caps_lock_down_up_shift_down_rus": "Shift",
+    
+    "normal_eng": "Shift",
+    "shift_down_eng": "Shift",
+    "caps_lock_down_up_eng": "Shift",
+    "caps_lock_down_up_shift_down_eng": "Shift"
+  },
+  {
+    "item_name": "ControlLeft",
+
+    "normal_rus": "Ctrl",
+    "shift_down_rus": "Ctrl",
+    "caps_lock_down_up_rus": "Ctrl",
+    "caps_lock_down_up_shift_down_rus": "Ctrl",
+    
+    "normal_eng": "Ctrl",
+    "shift_down_eng": "Ctrl",
+    "caps_lock_down_up_eng": "Ctrl",
+    "caps_lock_down_up_shift_down_eng": "Ctrl"
+  },
+  {
+    "item_name": "MetaLeft",
+
+    "normal_rus": "Win",
+    "shift_down_rus": "Win",
+    "caps_lock_down_up_rus": "Win",
+    "caps_lock_down_up_shift_down_rus": "Win",
+    
+    "normal_eng": "Win",
+    "shift_down_eng": "Win",
+    "caps_lock_down_up_eng": "Win",
+    "caps_lock_down_up_shift_down_eng": "Win"
+  },
+  {
+    "item_name": "AltLeft",
+
+    "normal_rus": "Alt",
+    "shift_down_rus": "Alt",
+    "caps_lock_down_up_rus": "Alt",
+    "caps_lock_down_up_shift_down_rus": "Alt",
+    
+    "normal_eng": "Alt",
+    "shift_down_eng": "Alt",
+    "caps_lock_down_up_eng": "Alt",
+    "caps_lock_down_up_shift_down_eng": "Alt"
+  },
+  {
+    "item_name": "Space",
+
+    "normal_rus": "",
+    "shift_down_rus": "",
+    "caps_lock_down_up_rus": "",
+    "caps_lock_down_up_shift_down_rus": "",
+    
+    "normal_eng": "",
+    "shift_down_eng": "",
+    "caps_lock_down_up_eng": "",
+    "caps_lock_down_up_shift_down_eng": ""
+  },
+  {
+    "item_name": "AltRight",
+
+    "normal_rus": "Alt",
+    "shift_down_rus": "Alt",
+    "caps_lock_down_up_rus": "Alt",
+    "caps_lock_down_up_shift_down_rus": "Alt",
+    
+    "normal_eng": "Alt",
+    "shift_down_eng": "Alt",
+    "caps_lock_down_up_eng": "Alt",
+    "caps_lock_down_up_shift_down_eng": "Alt"
+  },
+  {
+    "item_name": "ArrowLeft",
+
+    "normal_rus": "◄",
+    "shift_down_rus": "◄",
+    "caps_lock_down_up_rus": "◄",
+    "caps_lock_down_up_shift_down_rus": "◄",
+    
+    "normal_eng": "◄",
+    "shift_down_eng": "◄",
+    "caps_lock_down_up_eng": "◄",
+    "caps_lock_down_up_shift_down_eng": "◄"
+  },
+  {
+    "item_name": "ArrowDown",
+
+    "normal_rus": "▼",
+    "shift_down_rus": "▼",
+    "caps_lock_down_up_rus": "▼",
+    "caps_lock_down_up_shift_down_rus": "▼",
+    
+    "normal_eng": "▼",
+    "shift_down_eng": "▼",
+    "caps_lock_down_up_eng": "▼",
+    "caps_lock_down_up_shift_down_eng": "▼"
+  },
+  {
+    "item_name": "ArrowRight",
+
+    "normal_rus": "►",
+    "shift_down_rus": "►",
+    "caps_lock_down_up_rus": "►",
+    "caps_lock_down_up_shift_down_rus": "►",
+    
+    "normal_eng": "►",
+    "shift_down_eng": "►",
+    "caps_lock_down_up_eng": "►",
+    "caps_lock_down_up_shift_down_eng": "►"
+  },
+  {
+    "item_name": "ControlRight",
+
+    "normal_rus": "Ctrl",
+    "shift_down_rus": "Ctrl",
+    "caps_lock_down_up_rus": "Ctrl",
+    "caps_lock_down_up_shift_down_rus": "Ctrl",
+    
+    "normal_eng": "Ctrl",
+    "shift_down_eng": "Ctrl",
+    "caps_lock_down_up_eng": "Ctrl",
+    "caps_lock_down_up_shift_down_eng": "Ctrl"
   }
 ]
 
-//output items
+
 
   for (let i of items) {
+
+    //output items
 
     let item = document.createElement('div')
     item.classList.add('item')
@@ -180,6 +923,8 @@ let items = [
         eng.appendChild(caps_lock_down_up_shift_down_eng)
         caps_lock_down_up_shift_down_eng.textContent = i.caps_lock_down_up_shift_down_eng
 
+    //implement phisical keyboard keydown and keyup
+
     document.addEventListener('keydown', function(event) {
       if (event.code == i.item_name) {
         item.classList.add('btnDown')
@@ -192,11 +937,16 @@ let items = [
       }
     });
 
+    document.body.addEventListener('mouseup', function() {
+        item.classList.remove('btnDown')
+    })
+
   }
 
-//implement buttonDown
+//implement mousedown and mouseup
 
 let btns = document.querySelectorAll('.item')
+let textarea1 = document.querySelector('textarea')
 
 for(let btn of btns) {
   btn.addEventListener('mousedown', function(event) {
@@ -205,5 +955,34 @@ for(let btn of btns) {
   btn.addEventListener('mouseup', function(event) {
     event.currentTarget.classList.remove('btnDown')
   })
+
+  btn.addEventListener('click', function(event) {
+    let targetKey = items.filter(i => {
+      if(
+        i.item_name !== 'Backspace' && 
+        i.item_name !== 'Tab' && 
+        i.item_name !== 'CapsLock' && 
+        i.item_name !== 'Enter' && 
+        i.item_name !== 'ShiftLeft' && 
+        i.item_name !== 'ShiftRight' && 
+        i.item_name !== 'ArrowUp' && 
+        i.item_name !== 'ControlLeft' && 
+        i.item_name !== 'MetaLeft' && 
+        i.item_name !== 'AltLeft' && 
+        i.item_name !== 'Space' && 
+        i.item_name !== 'AltRight' && 
+        i.item_name !== 'ControlRight' && 
+        i.item_name !== 'ArrowLeft' && 
+        i.item_name !== 'ArrowDown' && 
+        i.item_name !== 'ArrowRight' &&
+        i.item_name !== 'Delete'
+      ) return i
+    }).find(i => i.item_name == event.currentTarget.id)
+    textarea1.textContent += targetKey.normal_eng
+  })
 }
+
+
+
+
   
