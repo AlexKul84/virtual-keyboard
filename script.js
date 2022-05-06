@@ -879,10 +879,10 @@ let items = [
       rus.classList.add('rus')
       item.appendChild(rus)
 
-        let normal = document.createElement('span')
-        normal.classList.add('normal')
-        rus.appendChild(normal)
-        normal.textContent = i.normal_rus
+        let normal_rus = document.createElement('span')
+        normal_rus.classList.add('normal_rus')
+        rus.appendChild(normal_rus)
+        normal_rus.textContent = i.normal_rus
 
         let shift_down_rus = document.createElement('span')
         shift_down_rus.classList.add('shift_down')
@@ -904,7 +904,7 @@ let items = [
       item.appendChild(eng)
 
         let normal_eng = document.createElement('span')
-        normal_eng.classList.add('normal')
+        normal_eng.classList.add('normal_eng')
         eng.appendChild(normal_eng)
         normal_eng.textContent = i.normal_eng
 
@@ -923,66 +923,151 @@ let items = [
         eng.appendChild(caps_lock_down_up_shift_down_eng)
         caps_lock_down_up_shift_down_eng.textContent = i.caps_lock_down_up_shift_down_eng
 
+
+  ///////////////////////////////////////////////////////////////////////////
+
+  function switchLanguage(func, ...codes) {
+    let pressed = new Set();
+    document.addEventListener('keydown', function(event) {
+      pressed.add(event.code);
+      for (let code of codes) {
+        if (!pressed.has(code)) {
+          return;
+        }
+      }
+      pressed.clear();
+      func();
+    });
+    document.addEventListener('keyup', function(event) {
+      pressed.delete(event.code);
+    });
+  }
+  
+  let funcLang = () => {
+    eng.classList.toggle('invisible')
+    rus.classList.toggle('visible')
+    normal_rus.classList.toggle('visible')
+  }
+
+  let funcCaps = () => {
+    eng.classList.toggle('invisible')
+    rus.classList.toggle('visible')
+    normal_rus.classList.toggle('visible')
+  }
+  
+  switchLanguage(
+    funcLang,
+    "ShiftLeft",
+    "AltLeft"
+  )
+
+///////////////////////////////////////////////////////////////////////////
+
     //implement phisical keyboard keydown and keyup
 
-    document.addEventListener('keydown', function(event) {
-      if (event.code == i.item_name) {
-        item.classList.add('btnDown')
-      }
-    });    
+  document.addEventListener('keydown', function(event) {
     
-    document.addEventListener('keyup', function(event) {
-      if (event.code == i.item_name) {
-        item.classList.remove('btnDown')
+    if (event.code == i.item_name) {
+      item.classList.add('btnDown')
+      if (
+        i.item_name !== 'Backspace' && 
+        i.item_name !== 'CapsLock' && 
+        i.item_name !== 'Enter' && 
+        i.item_name !== 'ShiftLeft' && 
+        i.item_name !== 'ShiftRight' &&
+        i.item_name !== 'ControlLeft' && 
+        i.item_name !== 'MetaLeft' && 
+        i.item_name !== 'AltLeft' && 
+        i.item_name !== 'Delete' &&
+        i.item_name !== 'Tab' && 
+        i.item_name !== 'Space' && 
+        i.item_name !== 'AltRight' && 
+        i.item_name !== 'ControlRight'
+      ) {
+        event.preventDefault()
+        if(window.getComputedStyle(normal_eng).display == 'none') {
+          textarea.value += i.normal_rus
+        } 
+        if(window.getComputedStyle(normal_rus).display == 'none') {
+          textarea.value += i.normal_eng
+        } 
+        
       }
-    });
+      if ( i.item_name == 'Space') {
+        event.preventDefault()
+        textarea.value += ' '
+      }
+      if ( i.item_name == 'Tab') {
+        event.preventDefault()
+        textarea.value += '  '
+      }
+      if ( i.item_name == 'AltRight' || i.item_name == 'AltLeft') {
+        event.preventDefault()
+      }     
 
-    document.body.addEventListener('mouseup', function() {
-        item.classList.remove('btnDown')
-    })
+    }
+  });    
+  
+  document.addEventListener('keyup', function(event) {
+    if (event.code == i.item_name) {
+      item.classList.remove('btnDown')
+    }
+  });
 
-  }
+  document.body.addEventListener('mouseup', function() {
+      item.classList.remove('btnDown')
+  })
+
+}
 
 //implement mousedown and mouseup
 
 let btns = document.querySelectorAll('.item')
-let textarea1 = document.querySelector('textarea')
 
 for(let btn of btns) {
   btn.addEventListener('mousedown', function(event) {
     event.currentTarget.classList.add('btnDown')
+    let targetKey = items.find(i => {
+      return i.item_name == event.currentTarget.id
+    })
+
+    if (
+      // event.currentTarget.id !== 'Backspace' && 
+      event.currentTarget.id !== 'CapsLock' && 
+      event.currentTarget.id !== 'Enter' && 
+      event.currentTarget.id !== 'ShiftLeft' && 
+      event.currentTarget.id !== 'ShiftRight' &&
+      event.currentTarget.id !== 'ControlLeft' && 
+      event.currentTarget.id !== 'MetaLeft' && 
+      event.currentTarget.id !== 'AltLeft' && 
+      event.currentTarget.id !== 'Delete' &&
+      event.currentTarget.id !== 'Tab' && 
+      event.currentTarget.id !== 'Space' && 
+      event.currentTarget.id !== 'AltRight' && 
+      event.currentTarget.id !== 'ControlRight'
+    ) {
+      if(window.getComputedStyle(event.currentTarget.childNodes[1].childNodes[0]).display == 'none') {
+        textarea.value += targetKey.normal_rus
+      }
+      if(window.getComputedStyle(event.currentTarget.childNodes[0].childNodes[0]).display == 'none') {
+        textarea.value += targetKey.normal_eng
+      }
+    } 
+    if (event.currentTarget.id == 'Space') {
+      textarea.value += ' '
+    }
+    if (event.currentTarget.id == 'Tab') {
+      textarea.value += '  '
+    }
+    if (event.currentTarget.id == 'Backspace') {
+      textarea.value -= targetKey.normal_eng
+    }
+
   })
+
   btn.addEventListener('mouseup', function(event) {
     event.currentTarget.classList.remove('btnDown')
   })
 
-  btn.addEventListener('click', function(event) {
-    let targetKey = items.filter(i => {
-      if(
-        i.item_name !== 'Backspace' && 
-        i.item_name !== 'Tab' && 
-        i.item_name !== 'CapsLock' && 
-        i.item_name !== 'Enter' && 
-        i.item_name !== 'ShiftLeft' && 
-        i.item_name !== 'ShiftRight' && 
-        i.item_name !== 'ArrowUp' && 
-        i.item_name !== 'ControlLeft' && 
-        i.item_name !== 'MetaLeft' && 
-        i.item_name !== 'AltLeft' && 
-        i.item_name !== 'Space' && 
-        i.item_name !== 'AltRight' && 
-        i.item_name !== 'ControlRight' && 
-        i.item_name !== 'ArrowLeft' && 
-        i.item_name !== 'ArrowDown' && 
-        i.item_name !== 'ArrowRight' &&
-        i.item_name !== 'Delete'
-      ) return i
-    }).find(i => i.item_name == event.currentTarget.id)
-    textarea1.textContent += targetKey.normal_eng
-  })
 }
-
-
-
-
   

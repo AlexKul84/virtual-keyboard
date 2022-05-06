@@ -50,6 +50,7 @@ html, body {
   padding-bottom: 10px;
   -webkit-transition: 0.05s;
   transition: 0.05s;
+  -webkit-user-select: none;
 }
 
 .container_keyboard .item.btnDown {
@@ -88,11 +89,27 @@ html, body {
   display: none;
 }
 
-.container_keyboard .rus .normal, .container_keyboard .rus .shift_down, .container_keyboard .rus .caps_lock_down_up, .container_keyboard .rus .caps_lock_down_up_shift_down {
+.container_keyboard .rus .normal_rus, .container_keyboard .rus .shift_down, .container_keyboard .rus .caps_lock_down_up, .container_keyboard .rus .caps_lock_down_up_shift_down {
   display: none;
 }
 
 .container_keyboard .eng .shift_down, .container_keyboard .eng .caps_lock_down_up, .container_keyboard .eng .caps_lock_down_up_shift_down {
+  display: none;
+}
+
+.container_keyboard .rus.visible {
+  display: block;
+}
+
+.container_keyboard .rus.visible .normal_rus.visible, .container_keyboard .rus.visible .shift_down.visible, .container_keyboard .rus.visible .caps_lock_down_up.visible, .container_keyboard .rus.visible .caps_lock_down_up_shift_down.visible {
+  display: block;
+}
+
+.container_keyboard .eng.invisible {
+  display: none;
+}
+
+.container_keyboard .eng.invisible .normal_eng {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

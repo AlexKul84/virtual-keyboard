@@ -44,6 +44,7 @@ html, body {
 			padding-top: 10px;
 			padding-bottom: 10px;
 			transition: 0.05s;
+			-webkit-user-select: none;
 		}
 
 		.item.btnDown {
@@ -76,7 +77,7 @@ html, body {
 		.rus {
 			display: none;
 
-			.normal, .shift_down, .caps_lock_down_up, .caps_lock_down_up_shift_down {
+			.normal_rus, .shift_down, .caps_lock_down_up, .caps_lock_down_up_shift_down {
 				display: none;
 			}
 		}
@@ -87,5 +88,19 @@ html, body {
 			}
 		}
 
+		.rus.visible {
+			display: block;
+
+			.normal_rus.visible, .shift_down.visible, .caps_lock_down_up.visible, .caps_lock_down_up_shift_down.visible {
+				display: block;
+			}
+		}
+
+		.eng.invisible {
+			display: none;
+			.normal_eng {
+				display: none;
+			}
+		}
 		
 }
