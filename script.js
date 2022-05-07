@@ -1059,11 +1059,18 @@ for(let btn of btns) {
       event.currentTarget.id !== 'AltRight' && 
       event.currentTarget.id !== 'ControlRight'
     ) {
-      if(window.getComputedStyle(event.currentTarget.childNodes[1].childNodes[0]).display == 'none') {
+      if(window.getComputedStyle(event.currentTarget.childNodes[0].childNodes[0]).display == 'block') {
         textarea.value += targetKey.normal_rus
       }
-      if(window.getComputedStyle(event.currentTarget.childNodes[0].childNodes[0]).display == 'none') {
+      if(window.getComputedStyle(event.currentTarget.childNodes[1].childNodes[0]).display == 'inline') {
         textarea.value += targetKey.normal_eng
+      }
+      console.log(event.currentTarget.childNodes[0].childNodes[2])
+      if(window.getComputedStyle(event.currentTarget.childNodes[0].childNodes[2]).display == 'block') {
+        textarea.value += targetKey.caps_lock_down_up_rus
+      }
+      if(window.getComputedStyle(event.currentTarget.childNodes[1].childNodes[2]).display == 'block') {
+        textarea.value += targetKey.caps_lock_down_up_eng
       }
     } 
     if (event.currentTarget.id == 'Space') {
