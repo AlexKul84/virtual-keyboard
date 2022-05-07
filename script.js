@@ -991,7 +991,6 @@ let items = [
         i.item_name !== 'ControlRight'
       ) {
         event.preventDefault()
-        console.log(window.getComputedStyle(caps_lock_down_up_eng).display)
         if(window.getComputedStyle(normal_rus).display == 'block') {
           textarea.value += i.normal_rus
         } 
@@ -1037,7 +1036,19 @@ let items = [
 
 let btns = document.querySelectorAll('.item')
 
+let capsLock = document.querySelector('.CapsLock')
+
+
 for(let btn of btns) {
+  capsLock.addEventListener('click', function(event) {
+    if (event.currentTarget.id == 'CapsLock') {
+      btn.childNodes[1].childNodes[0].classList.toggle('invisible')
+      btn.childNodes[1].childNodes[2].classList.toggle('visible')
+      btn.childNodes[0].childNodes[0].classList.toggle('invisible')
+      btn.childNodes[0].childNodes[2].classList.toggle('visible')
+    }
+  })
+
   btn.addEventListener('mousedown', function(event) {
     event.currentTarget.classList.add('btnDown')
     let targetKey = items.find(i => {
@@ -1045,7 +1056,7 @@ for(let btn of btns) {
     })
 
     if (
-      // event.currentTarget.id !== 'Backspace' && 
+      event.currentTarget.id !== 'Backspace' && 
       event.currentTarget.id !== 'CapsLock' && 
       event.currentTarget.id !== 'Enter' && 
       event.currentTarget.id !== 'ShiftLeft' && 
@@ -1065,7 +1076,6 @@ for(let btn of btns) {
       if(window.getComputedStyle(event.currentTarget.childNodes[1].childNodes[0]).display == 'inline') {
         textarea.value += targetKey.normal_eng
       }
-      console.log(event.currentTarget.childNodes[0].childNodes[2])
       if(window.getComputedStyle(event.currentTarget.childNodes[0].childNodes[2]).display == 'block') {
         textarea.value += targetKey.caps_lock_down_up_rus
       }
@@ -1079,15 +1089,12 @@ for(let btn of btns) {
     if (event.currentTarget.id == 'Tab') {
       textarea.value += '  '
     }
-    if (event.currentTarget.id == 'Backspace') {
-      textarea.value -= targetKey.normal_eng
-    }
-
   })
 
   btn.addEventListener('mouseup', function(event) {
-    event.currentTarget.classList.remove('btnDown')
+      event.currentTarget.classList.remove('btnDown')
   })
 
 }
+
   
