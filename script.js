@@ -950,15 +950,21 @@ let items = [
   }
 
   let funcCaps = () => {
-    eng.classList.toggle('invisible')
-    rus.classList.toggle('visible')
-    normal_rus.classList.toggle('visible')
+    normal_eng.classList.toggle('invisible')
+    caps_lock_down_up_eng.classList.toggle('visible')
+    normal_rus.classList.toggle('invisible')
+    caps_lock_down_up_rus.classList.toggle('visible')
   }
   
   switchLanguage(
     funcLang,
     "ShiftLeft",
     "AltLeft"
+  )
+
+  switchLanguage(
+    funcCaps,
+    "CapsLock",
   )
 
 ///////////////////////////////////////////////////////////////////////////
@@ -985,11 +991,18 @@ let items = [
         i.item_name !== 'ControlRight'
       ) {
         event.preventDefault()
-        if(window.getComputedStyle(normal_eng).display == 'none') {
+        console.log(window.getComputedStyle(caps_lock_down_up_eng).display)
+        if(window.getComputedStyle(normal_rus).display == 'block') {
           textarea.value += i.normal_rus
         } 
-        if(window.getComputedStyle(normal_rus).display == 'none') {
+        if(window.getComputedStyle(normal_eng).display == 'inline') {
           textarea.value += i.normal_eng
+        }         
+        if(window.getComputedStyle(caps_lock_down_up_rus).display == 'block') {
+          textarea.value += i.caps_lock_down_up_rus
+        } 
+        if(window.getComputedStyle(caps_lock_down_up_eng).display == 'block') {
+          textarea.value += i.caps_lock_down_up_eng
         } 
         
       }

@@ -96,9 +96,29 @@ html, body {
 			}
 		}
 
+		.rus.visible {
+			display: block;
+
+			.normal_rus.invisible, .shift_down.invisible, .caps_lock_down_up.invisible, .caps_lock_down_up_shift_down.invisible {
+				display: none;
+			}
+		}
+
+		.eng {
+			.shift_down.visible, .caps_lock_down_up.visible, .caps_lock_down_up_shift_down.visible {
+				display: block;
+			}
+		}
+
 		.eng.invisible {
 			display: none;
-			.normal_eng {
+			.normal_eng, .caps_lock_down_up {
+				display: none;
+			}
+		}
+
+		.eng {
+			.normal_eng.invisible {
 				display: none;
 			}
 		}

@@ -105,11 +105,27 @@ html, body {
   display: block;
 }
 
+.container_keyboard .rus.visible {
+  display: block;
+}
+
+.container_keyboard .rus.visible .normal_rus.invisible, .container_keyboard .rus.visible .shift_down.invisible, .container_keyboard .rus.visible .caps_lock_down_up.invisible, .container_keyboard .rus.visible .caps_lock_down_up_shift_down.invisible {
+  display: none;
+}
+
+.container_keyboard .eng .shift_down.visible, .container_keyboard .eng .caps_lock_down_up.visible, .container_keyboard .eng .caps_lock_down_up_shift_down.visible {
+  display: block;
+}
+
 .container_keyboard .eng.invisible {
   display: none;
 }
 
-.container_keyboard .eng.invisible .normal_eng {
+.container_keyboard .eng.invisible .normal_eng, .container_keyboard .eng.invisible .caps_lock_down_up {
+  display: none;
+}
+
+.container_keyboard .eng .normal_eng.invisible {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
