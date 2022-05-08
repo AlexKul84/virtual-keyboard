@@ -1128,6 +1128,10 @@ let items = [
         event.preventDefault()
         textarea.value += '  '
       }
+      if ( i.item_name == 'Enter') {
+        event.preventDefault()
+        textarea.value += '\n'
+      }
       if ( i.item_name == 'AltRight' || i.item_name == 'AltLeft') {
         event.preventDefault()
       }     
@@ -1335,6 +1339,9 @@ for(let btn of btns) {
     }
     if (event.currentTarget.id == 'Tab') {
       textarea.value += '  '
+    }
+    if (event.currentTarget.id == 'Enter') {
+      textarea.value += '\n'
     }
   })
 
