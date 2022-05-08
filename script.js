@@ -959,7 +959,7 @@ let items = [
       if(event.code !== 'ShiftLeft') {
         pressed.delete(event.code);
       }
-      if(event.code == 'ShiftLeft') {
+      if(event.code == 'ShiftLeft' || event.code == 'ShiftRight') {
         if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
           if (window.getComputedStyle(eng).display == 'block') {
             normal_eng.classList.remove('invisible')
@@ -1063,6 +1063,11 @@ let items = [
   switchLanguage(
     funcShift,
     "ShiftLeft",
+  )
+
+  switchLanguage(
+    funcShift,
+    "ShiftRight",
   )
 
 ///////////////////////////////////////////////////////////////////////////
