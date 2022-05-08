@@ -939,7 +939,15 @@ let items = [
       func();
     });
     document.addEventListener('keyup', function(event) {
-      pressed.delete(event.code);
+      if(event.code !== 'ShiftLeft') {
+        pressed.delete(event.code);
+      }
+      if(event.code == 'ShiftLeft') {
+        if(window.getComputedStyle(caps_lock_down_up_eng).display == 'none') {
+          normal_eng.classList.remove('invisible')
+          shift_down_eng.classList.remove('visible')
+        }
+      }
     });
   }
   
@@ -955,16 +963,29 @@ let items = [
     normal_rus.classList.toggle('invisible')
     caps_lock_down_up_rus.classList.toggle('visible')
   }
+
+  let funcShift = () => {
+    if(window.getComputedStyle(caps_lock_down_up_eng).display == 'none') {
+      normal_eng.classList.add('invisible')
+      shift_down_eng.classList.add('visible')
+    }
+
+  }
   
   switchLanguage(
     funcLang,
-    "ShiftLeft",
+    "ControlLeft",
     "AltLeft"
   )
 
   switchLanguage(
     funcCaps,
     "CapsLock",
+  )
+
+  switchLanguage(
+    funcShift,
+    "ShiftLeft",
   )
 
 ///////////////////////////////////////////////////////////////////////////
