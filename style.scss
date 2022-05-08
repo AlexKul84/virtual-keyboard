@@ -70,57 +70,74 @@ html, body {
 			grid-column: 5 / 11;
 		}
 
-		.keyRus, .keyRusUp, .keyEngUp {
+	.rus {
+		display: block;
+	}
+	.normal_rus {
+		display: block;
+	}
+	.shift_down_rus {
+		display: block;
+	}
+	.caps_lock_down_up_rus {
+		display: block;
+	}
+	.caps_lock_down_up_shift_down_rus {
+		display: block;
+	}
+	.eng {
+		display: block;
+	}
+	.normal_eng {
+		display: block;
+	}
+	.shift_down_eng {
+		display: block;
+	}
+	.caps_lock_down_up_eng {
+		display: block;
+	}
+	.caps_lock_down_up_shift_down_eng {
+		display: block;
+	}
+	.rus.invisible {
+		display: none;
+	}
+	.rus.invisible {
+		display: none;
+		.normal_rus, .shift_down_rus, .caps_lock_down_up_rus, .caps_lock_down_up_shift_down_rus {
 			display: none;
 		}
-
-		.rus {
+	}
+	.normal_rus.invisible {
+		display: none;
+	}
+	.shift_down_rus.invisible {
+		display: none;
+	}
+	.caps_lock_down_up_rus.invisible {
+		display: none;
+	}
+	.caps_lock_down_up_shift_down_rus.invisible {
+		display: none;
+	}
+	.eng.invisible {
+		display: none;
+		.normal_eng, .shift_down_eng, .caps_lock_down_up_eng, .caps_lock_down_up_shift_down_eng {
 			display: none;
-
-			.normal_rus, .shift_down, .caps_lock_down_up, .caps_lock_down_up_shift_down {
-				display: none;
-			}
 		}
-
-		.eng {
-			.shift_down, .caps_lock_down_up, .caps_lock_down_up_shift_down {
-				display: none;
-			}
-		}
-
-		.rus.visible {
-			display: block;
-
-			.normal_rus.visible, .shift_down.visible, .caps_lock_down_up.visible, .caps_lock_down_up_shift_down.visible {
-				display: block;
-			}
-		}
-
-		.rus.visible {
-			display: block;
-
-			.normal_rus.invisible, .shift_down.invisible, .caps_lock_down_up.invisible, .caps_lock_down_up_shift_down.invisible {
-				display: none;
-			}
-		}
-
-		.eng {
-			.shift_down.visible, .caps_lock_down_up.visible, .caps_lock_down_up_shift_down.visible {
-				display: block;
-			}
-		}
-
-		.eng.invisible {
-			display: none;
-			.normal_eng, .caps_lock_down_up {
-				display: none;
-			}
-		}
-
-		.eng {
-			.normal_eng.invisible {
-				display: none;
-			}
-		}
+	}
+	.normal_eng.invisible {
+		display: none;
+	}
+	.shift_down_eng.invisible {
+		display: none;
+	}
+	.caps_lock_down_up_eng.invisible {
+		display: none;
+	}
+	.caps_lock_down_up_shift_down_eng.invisible {
+		display: none;
+	}
 		
 }

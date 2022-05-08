@@ -877,52 +877,64 @@ let items = [
 
       let rus = document.createElement('span')
       rus.classList.add('rus')
+      rus.classList.add('invisible')
       item.appendChild(rus)
 
         let normal_rus = document.createElement('span')
         normal_rus.classList.add('normal_rus')
+        normal_rus.classList.add('invisible')
         rus.appendChild(normal_rus)
         normal_rus.textContent = i.normal_rus
 
         let shift_down_rus = document.createElement('span')
-        shift_down_rus.classList.add('shift_down')
+        shift_down_rus.classList.add('shift_down_rus')
+        shift_down_rus.classList.add('invisible')
         rus.appendChild(shift_down_rus)
         shift_down_rus.textContent = i.shift_down_rus
 
         let caps_lock_down_up_rus = document.createElement('span')
-        caps_lock_down_up_rus.classList.add('caps_lock_down_up')
+        caps_lock_down_up_rus.classList.add('caps_lock_down_up_rus')
+        caps_lock_down_up_rus.classList.add('invisible')
         rus.appendChild(caps_lock_down_up_rus)
         caps_lock_down_up_rus.textContent = i.caps_lock_down_up_rus
 
         let caps_lock_down_up_shift_down_rus = document.createElement('span')
-        caps_lock_down_up_shift_down_rus.classList.add('caps_lock_down_up_shift_down')
+        caps_lock_down_up_shift_down_rus.classList.add('caps_lock_down_up_shift_down_rus')
+        caps_lock_down_up_shift_down_rus.classList.add('invisible')
         rus.appendChild(caps_lock_down_up_shift_down_rus)
         caps_lock_down_up_shift_down_rus.textContent = i.caps_lock_down_up_shift_down_rus
 
       let eng = document.createElement('span')
       eng.classList.add('eng')
+      eng.classList.add('invisible')
       item.appendChild(eng)
 
         let normal_eng = document.createElement('span')
         normal_eng.classList.add('normal_eng')
+        normal_eng.classList.add('invisible')
         eng.appendChild(normal_eng)
         normal_eng.textContent = i.normal_eng
 
         let shift_down_eng = document.createElement('span')
-        shift_down_eng.classList.add('shift_down')
+        shift_down_eng.classList.add('shift_down_eng')
+        shift_down_eng.classList.add('invisible')
         eng.appendChild(shift_down_eng)
         shift_down_eng.textContent = i.shift_down_eng
 
         let caps_lock_down_up_eng = document.createElement('span')
-        caps_lock_down_up_eng.classList.add('caps_lock_down_up')
+        caps_lock_down_up_eng.classList.add('caps_lock_down_up_eng')
+        caps_lock_down_up_eng.classList.add('invisible')
         eng.appendChild(caps_lock_down_up_eng)
         caps_lock_down_up_eng.textContent = i.caps_lock_down_up_eng
 
         let caps_lock_down_up_shift_down_eng = document.createElement('span')
-        caps_lock_down_up_shift_down_eng.classList.add('caps_lock_down_up_shift_down')
+        caps_lock_down_up_shift_down_eng.classList.add('caps_lock_down_up_shift_down_eng')
+        caps_lock_down_up_shift_down_eng.classList.add('invisible')
         eng.appendChild(caps_lock_down_up_shift_down_eng)
         caps_lock_down_up_shift_down_eng.textContent = i.caps_lock_down_up_shift_down_eng
 
+    eng.classList.remove('invisible')
+    normal_eng.classList.remove('invisible')
 
   ///////////////////////////////////////////////////////////////////////////
 
@@ -943,32 +955,25 @@ let items = [
         pressed.delete(event.code);
       }
       if(event.code == 'ShiftLeft') {
-        if(window.getComputedStyle(caps_lock_down_up_eng).display == 'none') {
-          normal_eng.classList.remove('invisible')
-          shift_down_eng.classList.remove('visible')
-        }
+
       }
     });
   }
   
   let funcLang = () => {
     eng.classList.toggle('invisible')
-    rus.classList.toggle('visible')
-    normal_rus.classList.toggle('visible')
+    rus.classList.toggle('invisible')
+    normal_rus.classList.toggle('invisible')
   }
 
   let funcCaps = () => {
     normal_eng.classList.toggle('invisible')
-    caps_lock_down_up_eng.classList.toggle('visible')
+    caps_lock_down_up_eng.classList.toggle('invisible')
     normal_rus.classList.toggle('invisible')
-    caps_lock_down_up_rus.classList.toggle('visible')
+    caps_lock_down_up_rus.classList.toggle('invisible')
   }
 
   let funcShift = () => {
-    if(window.getComputedStyle(caps_lock_down_up_eng).display == 'none') {
-      normal_eng.classList.add('invisible')
-      shift_down_eng.classList.add('visible')
-    }
 
   }
   
@@ -1015,7 +1020,7 @@ let items = [
         if(window.getComputedStyle(normal_rus).display == 'block') {
           textarea.value += i.normal_rus
         } 
-        if(window.getComputedStyle(normal_eng).display == 'inline') {
+        if(window.getComputedStyle(normal_eng).display == 'block') {
           textarea.value += i.normal_eng
         }         
         if(window.getComputedStyle(caps_lock_down_up_rus).display == 'block') {
@@ -1047,10 +1052,6 @@ let items = [
     }
   });
 
-  document.body.addEventListener('mouseup', function() {
-      item.classList.remove('btnDown')
-  })
-
 }
 
 //implement mousedown and mouseup
@@ -1064,14 +1065,15 @@ for(let btn of btns) {
   capsLock.addEventListener('click', function(event) {
     if (event.currentTarget.id == 'CapsLock') {
       btn.childNodes[1].childNodes[0].classList.toggle('invisible')
-      btn.childNodes[1].childNodes[2].classList.toggle('visible')
+      btn.childNodes[1].childNodes[2].classList.toggle('invisible')
       btn.childNodes[0].childNodes[0].classList.toggle('invisible')
-      btn.childNodes[0].childNodes[2].classList.toggle('visible')
+      btn.childNodes[0].childNodes[2].classList.toggle('invisible')
     }
   })
 
   btn.addEventListener('mousedown', function(event) {
-    event.currentTarget.classList.add('btnDown')
+    console.log(event.currentTarget)
+      event.currentTarget.classList.add('btnDown')
     let targetKey = items.find(i => {
       return i.item_name == event.currentTarget.id
     })
@@ -1094,7 +1096,7 @@ for(let btn of btns) {
       if(window.getComputedStyle(event.currentTarget.childNodes[0].childNodes[0]).display == 'block') {
         textarea.value += targetKey.normal_rus
       }
-      if(window.getComputedStyle(event.currentTarget.childNodes[1].childNodes[0]).display == 'inline') {
+      if(window.getComputedStyle(event.currentTarget.childNodes[1].childNodes[0]).display == 'block') {
         textarea.value += targetKey.normal_eng
       }
       if(window.getComputedStyle(event.currentTarget.childNodes[0].childNodes[2]).display == 'block') {
@@ -1112,8 +1114,8 @@ for(let btn of btns) {
     }
   })
 
-  btn.addEventListener('mouseup', function(event) {
-      event.currentTarget.classList.remove('btnDown')
+  document.body.addEventListener('mouseup', function() {
+      btn.classList.remove('btnDown')
   })
 
 }

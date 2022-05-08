@@ -81,51 +81,95 @@ html, body {
   grid-column: 5 / 11;
 }
 
-.container_keyboard .keyRus, .container_keyboard .keyRusUp, .container_keyboard .keyEngUp {
-  display: none;
-}
-
 .container_keyboard .rus {
-  display: none;
-}
-
-.container_keyboard .rus .normal_rus, .container_keyboard .rus .shift_down, .container_keyboard .rus .caps_lock_down_up, .container_keyboard .rus .caps_lock_down_up_shift_down {
-  display: none;
-}
-
-.container_keyboard .eng .shift_down, .container_keyboard .eng .caps_lock_down_up, .container_keyboard .eng .caps_lock_down_up_shift_down {
-  display: none;
-}
-
-.container_keyboard .rus.visible {
   display: block;
 }
 
-.container_keyboard .rus.visible .normal_rus.visible, .container_keyboard .rus.visible .shift_down.visible, .container_keyboard .rus.visible .caps_lock_down_up.visible, .container_keyboard .rus.visible .caps_lock_down_up_shift_down.visible {
+.container_keyboard .normal_rus {
   display: block;
 }
 
-.container_keyboard .rus.visible {
+.container_keyboard .shift_down_rus {
   display: block;
 }
 
-.container_keyboard .rus.visible .normal_rus.invisible, .container_keyboard .rus.visible .shift_down.invisible, .container_keyboard .rus.visible .caps_lock_down_up.invisible, .container_keyboard .rus.visible .caps_lock_down_up_shift_down.invisible {
+.container_keyboard .caps_lock_down_up_rus {
+  display: block;
+}
+
+.container_keyboard .caps_lock_down_up_shift_down_rus {
+  display: block;
+}
+
+.container_keyboard .eng {
+  display: block;
+}
+
+.container_keyboard .normal_eng {
+  display: block;
+}
+
+.container_keyboard .shift_down_eng {
+  display: block;
+}
+
+.container_keyboard .caps_lock_down_up_eng {
+  display: block;
+}
+
+.container_keyboard .caps_lock_down_up_shift_down_eng {
+  display: block;
+}
+
+.container_keyboard .rus.invisible {
   display: none;
 }
 
-.container_keyboard .eng .shift_down.visible, .container_keyboard .eng .caps_lock_down_up.visible, .container_keyboard .eng .caps_lock_down_up_shift_down.visible {
-  display: block;
+.container_keyboard .rus.invisible {
+  display: none;
+}
+
+.container_keyboard .rus.invisible .normal_rus, .container_keyboard .rus.invisible .shift_down_rus, .container_keyboard .rus.invisible .caps_lock_down_up_rus, .container_keyboard .rus.invisible .caps_lock_down_up_shift_down_rus {
+  display: none;
+}
+
+.container_keyboard .normal_rus.invisible {
+  display: none;
+}
+
+.container_keyboard .shift_down_rus.invisible {
+  display: none;
+}
+
+.container_keyboard .caps_lock_down_up_rus.invisible {
+  display: none;
+}
+
+.container_keyboard .caps_lock_down_up_shift_down_rus.invisible {
+  display: none;
 }
 
 .container_keyboard .eng.invisible {
   display: none;
 }
 
-.container_keyboard .eng.invisible .normal_eng, .container_keyboard .eng.invisible .caps_lock_down_up {
+.container_keyboard .eng.invisible .normal_eng, .container_keyboard .eng.invisible .shift_down_eng, .container_keyboard .eng.invisible .caps_lock_down_up_eng, .container_keyboard .eng.invisible .caps_lock_down_up_shift_down_eng {
   display: none;
 }
 
-.container_keyboard .eng .normal_eng.invisible {
+.container_keyboard .normal_eng.invisible {
+  display: none;
+}
+
+.container_keyboard .shift_down_eng.invisible {
+  display: none;
+}
+
+.container_keyboard .caps_lock_down_up_eng.invisible {
+  display: none;
+}
+
+.container_keyboard .caps_lock_down_up_shift_down_eng.invisible {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
