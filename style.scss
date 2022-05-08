@@ -1,0 +1,148 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+
+	.container_main {
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+
+		.heding {
+			color: aqua;
+			margin-top: 0;
+			padding-top: 20px;
+		}
+
+		.textarea {
+			width: 80%;
+			margin-bottom: 20px;
+		}
+
+	}
+}
+
+.container_keyboard {
+	margin: 0 auto;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+
+	grid-template-columns: repeat(15, 50px);
+	gap: 5px;
+	color: white;
+
+		.item {
+			background-color: rgb(37, 31, 39);
+			min-height: 20px;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			transition: 0.05s;
+			-webkit-user-select: none;
+		}
+
+		.item.btnDown {
+			background-color: rgb(90, 79, 94);
+			border-radius: 20px;
+		}
+
+		.CapsLock.btnDownCapsLock {
+			background-color: rgb(90, 79, 94);
+			border-radius: 20px;
+		}
+
+		.item:hover {
+			background-color: rgb(90, 79, 94);
+			cursor: pointer;
+
+		}
+
+		.item:nth-child(14), .item:nth-child(42), .item:nth-child(55), .item:nth-child(68) {
+			grid-column: 14 / 16;
+		}
+
+		.item:nth-child(30), .item:nth-child(43), .item:nth-child(56) {
+			grid-column: 1 / 3;
+		}
+
+		.item:nth-child(59) {
+			grid-column: 5 / 11;
+		}
+
+	.rus {
+		display: block;
+	}
+	.normal_rus {
+		display: block;
+	}
+	.shift_down_rus {
+		display: block;
+	}
+	.caps_lock_down_up_rus {
+		display: block;
+	}
+	.caps_lock_down_up_shift_down_rus {
+		display: block;
+	}
+	.eng {
+		display: block;
+	}
+	.normal_eng {
+		display: block;
+	}
+	.shift_down_eng {
+		display: block;
+	}
+	.caps_lock_down_up_eng {
+		display: block;
+	}
+	.caps_lock_down_up_shift_down_eng {
+		display: block;
+	}
+	.rus.invisible {
+		display: none;
+	}
+	.rus.invisible {
+		display: none;
+		.normal_rus, .shift_down_rus, .caps_lock_down_up_rus, .caps_lock_down_up_shift_down_rus {
+			display: none;
+		}
+	}
+	.normal_rus.invisible {
+		display: none;
+	}
+	.shift_down_rus.invisible {
+		display: none;
+	}
+	.caps_lock_down_up_rus.invisible {
+		display: none;
+	}
+	.caps_lock_down_up_shift_down_rus.invisible {
+		display: none;
+	}
+	.eng.invisible {
+		display: none;
+		.normal_eng, .shift_down_eng, .caps_lock_down_up_eng, .caps_lock_down_up_shift_down_eng {
+			display: none;
+		}
+	}
+	.normal_eng.invisible {
+		display: none;
+	}
+	.shift_down_eng.invisible {
+		display: none;
+	}
+	.caps_lock_down_up_eng.invisible {
+		display: none;
+	}
+	.caps_lock_down_up_shift_down_eng.invisible {
+		display: none;
+	}
+		
+}
