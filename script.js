@@ -955,7 +955,30 @@ let items = [
         pressed.delete(event.code);
       }
       if(event.code == 'ShiftLeft') {
-
+        if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
+          if (window.getComputedStyle(eng).display == 'block') {
+            normal_eng.classList.remove('invisible')
+            shift_down_eng.classList.add('invisible')
+          }
+        }
+        if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius == '20px') {
+          if (window.getComputedStyle(eng).display == 'block') {
+            caps_lock_down_up_eng.classList.remove('invisible')
+            caps_lock_down_up_shift_down_eng.classList.add('invisible')
+          }
+        }
+        if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
+          if (window.getComputedStyle(rus).display == 'block') {
+            normal_rus.classList.remove('invisible')
+            shift_down_rus.classList.add('invisible')
+          }
+        }
+        if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius == '20px') {
+          if (window.getComputedStyle(rus).display == 'block') {
+            caps_lock_down_up_rus.classList.remove('invisible')
+            caps_lock_down_up_shift_down_rus.classList.add('invisible')
+          }
+        }
       }
     });
   }
@@ -977,9 +1000,30 @@ let items = [
   }
 
   let funcShift = () => {
-    // if(window.getComputedStyle(normal_rus).display == 'block') {
-
-    // }
+    if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
+      if (window.getComputedStyle(eng).display == 'block') {
+        normal_eng.classList.add('invisible')
+        shift_down_eng.classList.remove('invisible')
+      }
+    }
+    if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius == '20px') {
+      if (window.getComputedStyle(eng).display == 'block') {
+        caps_lock_down_up_eng.classList.add('invisible')
+        caps_lock_down_up_shift_down_eng.classList.remove('invisible')
+      }
+    }
+    if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
+      if (window.getComputedStyle(rus).display == 'block') {
+        normal_rus.classList.add('invisible')
+        shift_down_rus.classList.remove('invisible')
+      }
+    }
+    if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius == '20px') {
+      if (window.getComputedStyle(rus).display == 'block') {
+        caps_lock_down_up_rus.classList.add('invisible')
+        caps_lock_down_up_shift_down_rus.classList.remove('invisible')
+      }
+    }
   }
   
   switchLanguage(
@@ -1033,7 +1077,20 @@ let items = [
         } 
         if(window.getComputedStyle(caps_lock_down_up_eng).display == 'block') {
           textarea.value += i.caps_lock_down_up_eng
+        }
+        if(window.getComputedStyle(shift_down_rus).display == 'block') {
+          textarea.value += i.shift_down_rus
         } 
+        if(window.getComputedStyle(caps_lock_down_up_shift_down_rus).display == 'block') {
+          textarea.value += i.caps_lock_down_up_shift_down_rus
+        }
+        if(window.getComputedStyle(shift_down_eng).display == 'block') {
+          textarea.value += i.shift_down_eng
+        } 
+        if(window.getComputedStyle(caps_lock_down_up_shift_down_eng).display == 'block') {
+          textarea.value += i.caps_lock_down_up_shift_down_eng
+        }
+        
         
       }
       if ( i.item_name == 'Space') {
