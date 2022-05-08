@@ -17,6 +17,11 @@ body.appendChild(container)
     container_main.appendChild(description)
     description.textContent = 'Клавиатура создана в операционной системе Windows'
 
+    let description2 = document.createElement('p')
+    description2.classList.add('description')
+    container_main.appendChild(description2)
+    description2.textContent = 'Для переключения языка нажмите Ctrl + Alt'
+
     let textarea = document.createElement('textarea')
     textarea.classList.add('textarea')
     container_main.appendChild(textarea)
@@ -1029,6 +1034,24 @@ let items = [
   switchLanguage(
     funcLang,
     "ControlLeft",
+    "AltLeft"
+  )
+
+  switchLanguage(
+    funcLang,
+    "ControlRight",
+    "AltRight"
+  )
+
+  switchLanguage(
+    funcLang,
+    "ControlLeft",
+    "AltRight"
+  )
+
+  switchLanguage(
+    funcLang,
+    "ControlRight",
     "AltLeft"
   )
 
