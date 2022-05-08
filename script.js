@@ -1119,7 +1119,6 @@ let items = [
           textarea.value += i.caps_lock_down_up_shift_down_eng
         }
         
-        
       }
       if ( i.item_name == 'Space') {
         event.preventDefault()
@@ -1150,6 +1149,7 @@ let btns = document.querySelectorAll('.item')
 
 let capsLock = document.querySelector('.CapsLock')
 let shiftLeft = document.querySelector('.ShiftLeft')
+let shiftRight = document.querySelector('.ShiftRight')
 
 
 for(let btn of btns) {
@@ -1197,6 +1197,64 @@ for(let btn of btns) {
 
   shiftLeft.addEventListener('mouseup', function(event) {
     if (event.currentTarget.id == 'ShiftLeft') {
+      if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
+        if (window.getComputedStyle(btn.childNodes[1]).display == 'block') {
+          btn.childNodes[1].childNodes[0].classList.remove('invisible')
+          btn.childNodes[1].childNodes[1].classList.add('invisible')
+        }
+      }
+      if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius == '20px') {
+        if (window.getComputedStyle(btn.childNodes[1]).display == 'block') {
+          btn.childNodes[1].childNodes[2].classList.remove('invisible')
+          btn.childNodes[1].childNodes[3].classList.add('invisible')
+        }
+      }
+      if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
+        if (window.getComputedStyle(btn.childNodes[0]).display == 'block') {
+          btn.childNodes[0].childNodes[0].classList.remove('invisible')
+          btn.childNodes[0].childNodes[1].classList.add('invisible')
+        }
+      }
+      if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius == '20px') {
+        if (window.getComputedStyle(btn.childNodes[0]).display == 'block') {
+          btn.childNodes[0].childNodes[2].classList.remove('invisible')
+          btn.childNodes[0].childNodes[3].classList.add('invisible')
+        }
+      }
+    }
+  })
+
+  shiftRight.addEventListener('mousedown', function(event) {
+    if (event.currentTarget.id == 'ShiftRight') {
+      if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
+        if (window.getComputedStyle(btn.childNodes[1]).display == 'block') {
+          btn.childNodes[1].childNodes[0].classList.add('invisible')
+          btn.childNodes[1].childNodes[1].classList.remove('invisible')
+        }
+      }
+      if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius == '20px') {
+        if (window.getComputedStyle(btn.childNodes[1]).display == 'block') {
+          btn.childNodes[1].childNodes[2].classList.add('invisible')
+          btn.childNodes[1].childNodes[3].classList.remove('invisible')
+        }
+      }
+      if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
+        if (window.getComputedStyle(btn.childNodes[0]).display == 'block') {
+          btn.childNodes[0].childNodes[0].classList.add('invisible')
+          btn.childNodes[0].childNodes[1].classList.remove('invisible')
+        }
+      }
+      if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius == '20px') {
+        if (window.getComputedStyle(btn.childNodes[0]).display == 'block') {
+          btn.childNodes[0].childNodes[2].classList.add('invisible')
+          btn.childNodes[0].childNodes[3].classList.remove('invisible')
+        }
+      }
+    }
+  })
+
+  shiftRight.addEventListener('mouseup', function(event) {
+    if (event.currentTarget.id == 'ShiftRight') {
       if(window.getComputedStyle(container_keyboard.childNodes[29]).borderRadius !== '20px') {
         if (window.getComputedStyle(btn.childNodes[1]).display == 'block') {
           btn.childNodes[1].childNodes[0].classList.remove('invisible')
