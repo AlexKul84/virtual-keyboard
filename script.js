@@ -967,6 +967,9 @@ let items = [
   }
 
   let funcCaps = () => {
+    if(i.item_name == 'CapsLock') {
+      item.classList.toggle('btnDownCapsLock')
+    }
     normal_eng.classList.toggle('invisible')
     caps_lock_down_up_eng.classList.toggle('invisible')
     normal_rus.classList.toggle('invisible')
@@ -974,7 +977,9 @@ let items = [
   }
 
   let funcShift = () => {
+    // if(window.getComputedStyle(normal_rus).display == 'block') {
 
+    // }
   }
   
   switchLanguage(
@@ -1064,6 +1069,11 @@ let capsLock = document.querySelector('.CapsLock')
 for(let btn of btns) {
   capsLock.addEventListener('click', function(event) {
     if (event.currentTarget.id == 'CapsLock') {
+
+      if(btn.id == 'CapsLock') {
+        btn.classList.toggle('btnDownCapsLock')
+      }
+
       btn.childNodes[1].childNodes[0].classList.toggle('invisible')
       btn.childNodes[1].childNodes[2].classList.toggle('invisible')
       btn.childNodes[0].childNodes[0].classList.toggle('invisible')
@@ -1072,8 +1082,9 @@ for(let btn of btns) {
   })
 
   btn.addEventListener('mousedown', function(event) {
-    console.log(event.currentTarget)
+    if (event.currentTarget.id !== 'CapsLock') {
       event.currentTarget.classList.add('btnDown')
+    }
     let targetKey = items.find(i => {
       return i.item_name == event.currentTarget.id
     })
@@ -1114,8 +1125,11 @@ for(let btn of btns) {
     }
   })
 
-  document.body.addEventListener('mouseup', function() {
+  document.body.addEventListener('mouseup', function(event) {
+    if (event.currentTarget.id !== 'CapsLock') {
+
       btn.classList.remove('btnDown')
+    }
   })
 
 }

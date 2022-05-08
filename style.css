@@ -58,6 +58,11 @@ html, body {
   border-radius: 20px;
 }
 
+.container_keyboard .CapsLock.btnDownCapsLock {
+  background-color: #5a4f5e;
+  border-radius: 20px;
+}
+
 .container_keyboard .item:hover {
   background-color: #5a4f5e;
   cursor: pointer;
